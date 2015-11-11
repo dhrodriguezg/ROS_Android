@@ -9,12 +9,9 @@ import java.net.URI;
 
 public class Tutorial extends RosActivity
 {
-    protected Tutorial(String notificationTicker, String notificationTitle) {
-        super(notificationTicker, notificationTitle);
-    }
 
-    protected Tutorial(String notificationTicker, String notificationTitle, URI customMasterUri) {
-        super(notificationTicker, notificationTitle, customMasterUri);
+    public Tutorial() {
+        super("Tutorial", "Tutorial", URI.create("http://192.168.1.121:11311"));
     }
 
     /** Called when the activity is first created. */
